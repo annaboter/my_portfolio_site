@@ -1,1 +1,15 @@
 // Specific CSS for your home-page
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  h1 {
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    font-size: 3rem;
+    margin-left: 155px;
+  }
+}
