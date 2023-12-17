@@ -1,7 +1,9 @@
 .navbar {
   padding: 20px;
+  position: sticky;
+  border-radius: 0 0 30px 30px;
 }
 
-.about {
-  text-decoration: none;
+#about {
+  color: black
 }

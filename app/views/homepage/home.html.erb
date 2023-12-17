@@ -1,9 +1,30 @@
 <nav class="navbar">
   <a class="navbar-brand" href="">annaboter</a>
-  <a class="about" href="#">Who is she?</a>
+  <%= link_to 'Who is she?', about_index_path, id: "about" %>
 </nav>
 
-<div class="container">
-  <h1>Front-end <br> developer</h1>
-  <p>with a passion for making things pretty.</p>
+<div class="scroll">
+  <div class="container">
+    <section class="one">
+      <div class="main">
+        <h1>Front-end <br> developer</h1>
+        <p>with a passion for making things different.</p>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="card-wrapper">
+        <div class="card" id="projects"></div>
+        <h2>Projects</h2>
+      </div>
+      <div class="card-wrapper">
+        <div class="card" id="illustrations"></div>
+        <h2>Illustrations</h2>
+      </div>
+      <div class="card-wrapper">
+        <div class="card" id="writings"></div>
+        <h2>Writings</h2>
+      </div>
+    </section>
+  </div>
 </div>
