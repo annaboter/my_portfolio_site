@@ -1,20 +1,51 @@
 const stickySections = [...document.querySelectorAll('.sticky')]
-console.log(stickySections  )
 
-let images = [
-  'https://dr.savee-cdn.com/things/thumbnails/6/5/55a63f327db49b4cef1007.webp',
-  'https://dr.savee-cdn.com/things/thumbnails/6/5/8491253765211e2494b4bc.webp',
-  'https://dr.savee-cdn.com/things/thumbnails/6/5/3bf7c6be0c50a814ddf168.webp',
-  'https://dr.savee-cdn.com/things/thumbnails/6/5/5e6c900271ebddbe86e0f4.webp'
-]
+// same images for each section
+// let images = [
+//   'https://dr.savee-cdn.com/things/thumbnails/6/5/55a63f327db49b4cef1007.webp',
+//   'https://dr.savee-cdn.com/things/thumbnails/6/5/8491253765211e2494b4bc.webp',
+//   'https://dr.savee-cdn.com/things/thumbnails/6/5/3bf7c6be0c50a814ddf168.webp',
+//   'https://dr.savee-cdn.com/things/thumbnails/6/5/5e6c900271ebddbe86e0f4.webp'
+// ]
 
-images.forEach(img => {
-  stickySections.forEach(section => {
+// images.forEach(img => {
+//   stickySections.forEach(section => {
+//     let image = document.createElement('img');
+//     image.src = img
+//     section.querySelector('.scroll-section').appendChild(image)
+//   })
+// })
+
+// specific images for each section, array i corresponds to section i
+let sectionImages = [
+  [
+    'Twogather/Twogather-0.png',
+    'Twogather/Twogather-1.png',
+    'Twogather/Twogather-2.png',
+    'Twogather/Twogather-3.png',
+    'Twogather/Twogather-4.png'
+  ],
+  [
+    'https://example.com/image1.jpg',
+    'https://example.com/image2.jpg',
+    'https://example.com/image3.jpg',
+    'https://example.com/image4.jpg'
+  ],
+  [
+
+  ]
+];
+
+stickySections.forEach((section, index) => {
+  let imagesForSection = sectionImages[index % sectionImages.length];
+
+  imagesForSection.forEach(imgPath => {
     let image = document.createElement('img');
-    image.src = img
-    section.querySelector('.scroll-section').appendChild(image)
-  })
-})
+    image.src = `/assets/${imgPath}`;
+    section.querySelector('.scroll-section').appendChild(image);
+  });
+});
+
 
 window.addEventListener('scroll', (e) => {
   for(let i = 0; i < stickySections.length; i++){
