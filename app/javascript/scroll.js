@@ -31,9 +31,6 @@ let sectionImages = [
     'https://example.com/image3.jpg',
     'https://example.com/image4.jpg'
   ],
-  [
-
-  ]
 ];
 
 stickySections.forEach((section, index) => {
