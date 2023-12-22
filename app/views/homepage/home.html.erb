@@ -14,15 +14,21 @@
 
     <section class="two">
       <div class="card-wrapper">
-        <div class="card" id="projects"></div>
+        <%= link_to projects_index_path do %>
+          <div class="card" id="projects"></div>
+        <% end %>
         <h2>Projects</h2>
       </div>
       <div class="card-wrapper">
-        <div class="card" id="illustrations"></div>
+        <%= link_to illustrations_index_path do %>
+          <div class="card" id="illustrations"></div>
+        <% end %>
         <h2>Illustrations</h2>
       </div>
       <div class="card-wrapper">
-        <div class="card" id="writings"></div>
+        <%= link_to writings_index_path do %>
+          <div class="card" id="writings"></div>
+        <% end %>
         <h2>Writings</h2>
       </div>
     </section>
