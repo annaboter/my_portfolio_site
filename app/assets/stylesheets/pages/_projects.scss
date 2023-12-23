@@ -24,7 +24,7 @@ main {
 }
 
 .sticky-parent {
-  height: 180vh;
+  height: 200vh;
 }
 
 .sticky {
@@ -46,9 +46,40 @@ main {
 }
 
 img {
-  width: 400px;
+  width: 500px;
   height: 80%;
   object-fit: contain;
   object-position: center;
-  margin-right: 250px;
+  margin-right: 200px;
+}
+
+.scroll-down-flex {
+  align-self: flex-end;
+  margin: 0 50px 50px 0;
+}
+
+#scroll-down {
+  background-color: #a2b8d1;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  p {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }

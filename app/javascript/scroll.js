@@ -26,11 +26,16 @@ let sectionImages = [
     'Twogather/Twogather-4.png'
   ],
   [
-    'https://example.com/image1.jpg',
-    'https://example.com/image2.jpg',
-    'https://example.com/image3.jpg',
-    'https://example.com/image4.jpg'
+    'Airbnbooks/Airbnbooks-0.png',
+    'Airbnbooks/Airbnbooks-1.png',
+    'Airbnbooks/Airbnbooks-2.png'
   ],
+  [
+    'PCTN/PCTN-0.png',
+    'PCTN/PCTN-1.png',
+    'PCTN/PCTN-2.png',
+    'PCTN/PCTN-3.png',
+  ]
 ];
 
 stickySections.forEach((section, index) => {
