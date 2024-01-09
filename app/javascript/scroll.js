@@ -45,7 +45,7 @@ stickySections.forEach((section, index) => {
 
   imagesForSection.forEach(imgPath => {
     let image = document.createElement('img');
-    image.src = `/assets/images/${imgPath}`;
+    image.src = `/assets/${imgPath}`;
     section.querySelector('.scroll-section').appendChild(image);
   });
 });
