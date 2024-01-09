@@ -19,22 +19,22 @@ const stickySections = [...document.querySelectorAll('.sticky')]
 // specific images for each section, array i corresponds to section i
 let sectionImages = [
   [
-    'Twogather/Twogather-0.png',
-    'Twogather/Twogather-1.png',
-    'Twogather/Twogather-2.png',
-    'Twogather/Twogather-3.png',
-    'Twogather/Twogather-4.png'
+    'twogather/twogather-0.png',
+    'twogather/twogather-1.png',
+    'twogather/twogather-2.png',
+    'twogather/twogather-3.png',
+    'twogather/twogather-4.png'
   ],
   [
-    'Airbnbooks/Airbnbooks-0.png',
-    'Airbnbooks/Airbnbooks-1.png',
-    'Airbnbooks/Airbnbooks-2.png'
+    'airbnbooks/airbnbooks-0.png',
+    'airbnbooks/airbnbooks-1.png',
+    'airbnbooks/airbnbooks-2.png'
   ],
   [
-    'PCTN/PCTN-0.png',
-    'PCTN/PCTN-1.png',
-    'PCTN/PCTN-2.png',
-    'PCTN/PCTN-3.png',
+    'pctn/pctn-0.png',
+    'pctn/pctn-1.png',
+    'pctn/pctn-2.png',
+    'pctn/pctn-3.png',
   ]
 ];
 
