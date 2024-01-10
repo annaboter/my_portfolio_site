@@ -74,3 +74,5 @@ gem "simple_form"
 gem "sassc-rails"
 
 gem "bootstrap", "~> 5.2"
+
+gem "cloudinary"
