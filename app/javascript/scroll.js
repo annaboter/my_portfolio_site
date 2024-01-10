@@ -38,8 +38,6 @@ let sectionImages = [
   ]
 ];
 
-// app/assets/images/twogather/twogather-0.png
-
 stickySections.forEach((section, index) => {
   let imagesForSection = sectionImages[index % sectionImages.length];
 
