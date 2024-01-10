@@ -17,35 +17,38 @@ const stickySections = [...document.querySelectorAll('.sticky')]
 // })
 
 // specific images for each section, array i corresponds to section i
+
+let cloudinaryBaseUrl = 'https://res.cloudinary.com/dvjsobs13/image/upload/';
+
 let sectionImages = [
   [
-    'twogather/twogather-0.png',
-    'twogather/twogather-1.png',
-    'twogather/twogather-2.png',
-    'twogather/twogather-3.png',
-    'twogather/twogather-4.png'
+    'portfolio-projects/qyeokdjckbt61lesgjwt',
+    'portfolio-projects/usxiyjcw9hgxrcmvt3kt',
+    'portfolio-projects/m7mvlzhuqbuh0s3kxx4r',
+    'portfolio-projects/vyr16rky7euwebxmvji1',
+    'portfolio-projects/eu7hzrf86qppefyw7rcb',
   ],
   [
-    'airbnbooks/airbnbooks-0.png',
-    'airbnbooks/airbnbooks-1.png',
-    'airbnbooks/airbnbooks-2.png'
+    'portfolio-projects/itfljvhusog7lruyba8v',
+    'portfolio-projects/gkr0zox1fy99fyhg421i',
+    'portfolio-projects/wmjkqpu7ju3i9ntkdhbd'
   ],
   [
-    'pctn/pctn-0.png',
-    'pctn/pctn-1.png',
-    'pctn/pctn-2.png',
-    'pctn/pctn-3.png',
+    'portfolio-projects/cjyyifyish32mrwujcvm',
+    'portfolio-projects/t0gyr5a7dizxavfcvfoq',
+    'portfolio-projects/gg0urgsc5hnprhbl6and',
+    'portfolio-projects/hukn1njsb98nehfn1jlo',
   ]
 ];
-
-// app/assets/images/twogather/twogather-0.png
 
 stickySections.forEach((section, index) => {
   let imagesForSection = sectionImages[index % sectionImages.length];
 
   imagesForSection.forEach(imgPath => {
     let image = document.createElement('img');
-    image.src = `/assets/${imgPath}`;
+    // image.src = `/assets/${imgPath}`;
+    let cloudinaryUrl = cloudinaryBaseUrl + imgPath;
+    image.src = cloudinaryUrl;
     section.querySelector('.scroll-section').appendChild(image);
   });
 });
