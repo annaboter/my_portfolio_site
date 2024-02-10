@@ -1,4 +1,8 @@
 // Specific CSS for your home-page
+body {
+  background-color: #f8f6fb;
+}
+
 .scroll {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -21,8 +25,9 @@ section {
 
 .one {
   background-image: url("Me_Animation.gif");
-  background-size: cover;
-  background-position: center right -30px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main{
@@ -30,7 +35,7 @@ section {
   display: flex;
   flex-direction: column;
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 2.5rem;
   }
   p {
@@ -71,4 +76,8 @@ section {
 #writings {
   background-image: url("Purple_iPad_Air.png");
   background-size: cover;
+}
+
+h2 {
+  text-decoration: underline;
 }
