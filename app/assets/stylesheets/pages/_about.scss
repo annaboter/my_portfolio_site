@@ -8,7 +8,10 @@
 }
 
 .photo-wrapper {
-
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  grid-template-rows: repeat(2, 260px);
+  grid-gap: 10px;
 }
 
 .photo {
@@ -22,23 +25,23 @@
   background-image: url("Koppie.jpeg");
   width: 260px;
   height: 260px;
-  top: 130px;
+  grid-column: 2;
 }
 
 .left {
   background-image: url("Truffle.jpeg");
   width: 177px;
   height: 177px;
-  top: 150px;
-  left: -35px;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .right {
   background-image: url("Namsan.jpeg");
   width: 260px;
   height: 391px;
-  top: -90px;
-  left: 170px;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 #info {
