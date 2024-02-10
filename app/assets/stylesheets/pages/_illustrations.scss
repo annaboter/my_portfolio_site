@@ -1,15 +1,70 @@
-.procreate-photo {
+.art {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  img {
-    padding-right: 60px;
+  justify-content: center;
+  height: 90vh;
+  h1 {
+    font-size: 6rem;
+    padding: 40px 0;
   }
 }
 
+.type {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding: 0 10px 60px;
+}
+
+.intro {
+  width: 580px;
+  text-align: justify;
+}
+
+.procreate-flex {
+  display: flex;
+  justify-content: center;
+}
 .procreate {
-  p {
-    width: 500px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .worm {
+
+  }
+  .trust {
+
+  }
+  .sunflower {
+
+  }
+  .question {
+
+  }
+  .work {
+
+  }
+  .pink {
+    grid-row: 4;
+    grid-column: span 2;
+    img {
+      width: 100%;
+    };
+  }
+  .bootcampcat {
+    grid-row: 5;
+    grid-column: span 2;
+    img {
+      width: 100%;
+    }
+  }
+  .bee {
+
   }
 }

@@ -4,23 +4,53 @@
   <%= link_to 'Email me', 'mailto:annabothe0@gmail.com', id: "email" %>
 </nav>
 
-<section>
-  <div class="container">
-    <div class="procreate">
-      <h1>Procreate Art</h1>
-      <p>I love doodling during my free time and I like to encorporate them in my web designing too! Here are some of my favourites which I'm sure you'll like too.<br><b>Scroll to the right to find out</b></p>
-      <div class="procreate-photo">
+<div class="container art">
+  <h1>Illustrations.</h1>
+  <div class="type">
+    <h2>DIGITAL</h2>
+    <h2>POSCA</h2>
+  </div>
+  <p class="intro">Welcome to my portfolio, where creativity meets digital and Posca art. In my free time, I indulge in the joy of doodling, and I've seamlessly integrated this passion into my web design endeavors. I'm thrilled to share some of my favorite creations with you, and I want to emphasize that every piece of art and image you see on this website is a product of my own hands and imagination. I hope you find as much delight in exploring them as I did in bringing them to life.</p>
+</div>
+
+<div class="procreate-flex">
+  <div class="procreate">
+      <div class="worm">
         <%= image_tag("Procreate/Worm_Is_Here_To_Slay.png", size: "16x10", alt: "Self portrait of me holding a cup saying: Slay.") %>
-        <%= image_tag("Procreate/Trust_The_Process_.png", size: "16x10", alt: "Face on an open laptop with text above saying: Trust the process.") %>
-        <%= image_tag("Procreate/Sunflower.png", size: "16x10", alt: "Girl's face in pastel colors, almost as if she is a sunflower") %>
-        <%= image_tag("Procreate/What_Was_I_Doing.png", size: "16x10", alt: "White cat outline with questions marks above his head") %>
-        <%= image_tag("Procreate/MacBook_Wallpaper.png", size: "16x10", alt: "Pink gardient blob wallpaper") %>
-        <%= image_tag("Procreate/Bootcampcat_.png", size: "16x10", alt: "Cat dreaming of a cat graduating with the text: Don't worry about it champ, you'll get there.") %>
-        <%= image_tag("Procreate/I_Have_To_Go_To_Work.png", size: "16x10", alt: "Business man cat having to go to work with purple blobs background") %>
-        <%= image_tag("Procreate/He_Is_Speed.png", size: "16x10", alt: "Bee getting enticed by a flower bouquet") %>
+        <p>Worm Is Here To Slay</p>
       </div>
-    </div>
-</section>
+      <div class="trust">
+        <%= image_tag("Procreate/Trust_The_Process_.png", size: "16x10", alt: "Face on an open laptop with text above saying: Trust the process.") %>
+        <p>Trust The Process</p>
+      </div>
+      <div class="sunflower">
+        <%= image_tag("Procreate/Sunflower.png", size: "16x10", alt: "Girl's face in pastel colors, almost as if she is a sunflower") %>
+        <p>Sunflower</p>
+      </div>
+      <div class="question">
+        <%= image_tag("Procreate/What_Was_I_Doing.png", size: "16x10", alt: "White cat outline with questions marks above his head") %>
+        <p>What Was I Doing</p>
+      </div>
+      <div class="work">
+        <%= image_tag("Procreate/I_Have_To_Go_To_Work.png", size: "16x10", alt: "Business man cat having to go to work with purple blobs background") %>
+        <p>I Have To Go To Work</p>
+      </div>
+      <div class="bee">
+        <%= image_tag("Procreate/He_Is_Speed.png", size: "16x10", alt: "Bee getting enticed by a flower bouquet") %>
+        <p>He Is Speed</p>
+      </div>
+      <div class="pink">
+        <%= image_tag("Procreate/MacBook_Wallpaper.png", size: "16x10", alt: "Pink gardient blob wallpaper") %>
+        <p>Vibing With Pink</p>
+      </div>
+      <div class="bootcampcat">
+        <%= image_tag("Procreate/Bootcampcat_.png", size: "16x10", alt: "Cat dreaming of a cat graduating with the text: Don't worry about it champ, you'll get there.") %>
+        <p>Bootcampcat</p>
+      </div>
+  </div>
+</div>
+
+
 
   <%# <div class="posca">
     <h1>Posca Art</h1>
@@ -28,5 +58,3 @@
 
     </div>
   </div> %>
-
-</div>
