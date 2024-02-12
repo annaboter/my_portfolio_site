@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'writings/index'
   get 'illustrations/index'
   get 'projects/index'
   get '/', to: 'homepage#home', as: 'root'

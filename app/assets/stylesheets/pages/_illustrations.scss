@@ -5,8 +5,8 @@
   justify-content: center;
   height: 100vh;
   h1 {
-    font-size: 6rem;
-    padding: 40px 0;
+    font-size: 4rem;
+    padding: 35px 0;
   }
 }
 
@@ -14,13 +14,14 @@
   display: flex;
   justify-content: space-between;
   width: 600px;
-  padding: 0 10px 60px;
-  h3 {
+  padding: 0 10px 35px;
+  h4 {
     padding: 13px;
     background-color: #f2d857;
     border-radius: 12px;
+    font-size: 1.4rem;
   }
-  h3:hover {
+  h4:hover {
     background-color: #d9c24e;
     transition: background-color 0.3s ease-in-out;
   }

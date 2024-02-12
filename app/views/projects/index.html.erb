@@ -4,70 +4,39 @@
   <%= link_to 'Email me', 'mailto:annabothe0@gmail.com', id: "email" %>
 </nav>
 
-<main>
-  <section>
-    <div class="container">
-      <h1>TwoGather</h1>
-      <div class="info-flex">
-        <div>
-          <p>Made in two weeks during the Le Wagon web dev bootcamp, TwoGather is an web app pitched by me to promote community and real human connection. Together with two amazing teammates, Vincent Bohec and Zlatko Naumoski, we created a human first web app. <a href="https://two-gather-aeeb96d61d6a.herokuapp.com/">Try it out yourself!</a></p>
-          <p>The idea of this app came to me after cooking dinner for a good friend who also happens to be my housemate. I noticed how a simple act of spontaneously inviting someone to join dinner can really help someone out and be very fulfilling. Everyday tasks such as feeding yourself, cleaning the house, and other daily household tasks can be really challenging depending on one's situation.</p>
-        </div>
-        <div>
-          <p>How many of us have been in a situation where they had been limited in their ability to keep up with the house or themselves? How often do we feel ashamed of not being able to complete those "easy" tasks by ourselves? I want to lift that burden. Thus this app was born!</p>
-          <p>With TwoGather, you can either be the friendly neighborhood helper, or the helpee. By focussing on your specific location, you have a chance to connect to neighbors who are asking for help or providing help. Ultimately, getting your request fulfilled is the main goal, however, together, we can build a thriving and strong community based on trust and good relationships.</p>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-down-flex">
-      <div id="scroll-down">
-        <p>scroll down</p>
-      </div>
-    </div>
-  </section>
-  <div class="sticky-parent">
-    <div class="sticky">
-      <div class="scroll-section"></div>
-    </div>
+<div class="container projects">
+  <h1>Projects.</h1>
+  <div class="type">
+    <h4>TwoGather</h4>
+    <h4>AirBnBooks</h4>
+    <h4>PCTN Game</h4>
   </div>
+</div>
 
-  <section>
-    <div class="container">
-      <h1>Airbnbooks</h1>
-       <div class="info-flex">
-         <div>
-           <p>After just 7 weeks into the Web Development bootcamp of Le Wagon, me and my teammates, Vincent Bohec and Zlatko Naumoski, made a fun Airbnb clone website that, instead of renting apartments, rents out books!</p>
-           <p>Our biggest challenge was finishing the whole idea in 1 week. Like a new born deer, wobbly on our legs, we tackled building the app in a record time. Having never worked on a web project like this with teammembers before, it was a gigantic learning experience for all of us.</p>
-         </div>
-         <div>
-           <p>We figured out how to divide our responsibilities by working in silos and always reminding ourselves of the MVC pattern. This project has been the backbone of teaching me project implementation and teamwork and I would have not been this confident in my web dev skills if it wasn't for this project.</p>
-         </div>
-       </div>
-    </div>
-  </section>
-  <div class="sticky-parent">
-    <div class="sticky">
-      <div class="scroll-section"></div>
-    </div>
+<div class="container twogather">
+  <div class="project text">
+    <p>Made in two weeks during the Le Wagon web dev bootcamp, TwoGather is an web app pitched by me to promote community and real human connection. Together with two amazing teammates, Vincent Bohec and Zlatko Naumoski, we created a human first web app. <a href="https://two-gather-aeeb96d61d6a.herokuapp.com/">Try it out yourself!</a></p>
+    <p>The idea of this app came to me after cooking dinner for a good friend who also happens to be my housemate. I noticed how a simple act of spontaneously inviting someone to join dinner can really help someone out and be very fulfilling. Everyday tasks such as feeding yourself, cleaning the house, and other daily household tasks can be really challenging depending on one's situation.</p>
+    <p>How many of us have been in a situation where they had been limited in their ability to keep up with the house or themselves? How often do we feel ashamed of not being able to complete those "easy" tasks by ourselves? I want to lift that burden. Thus this app was born!</p>
+    <p>With TwoGather, you can either be the friendly neighborhood helper, or the helpee. By focussing on your specific location, you have a chance to connect to neighbors who are asking for help or providing help. Ultimately, getting your request fulfilled is the main goal, however, together, we can build a thriving and strong community based on trust and good relationships.</p>
   </div>
+  <div class="project images">
+    <%= image_tag("twogather/twogather-0.png", size: "300x575", alt: "TwoGather landing screen to get into the app") %>
+  </div>
+</div>
 
-  <section>
-    <div class="container">
-      <h1>PCTN Game</h1>
-      <div class="info-flex">
-        <div>
-          <p>One of my proudest achievements and a true example of what I stand for. This "choose your own adventure game" was a result of coming up for a fun, engaging, and innovative way of presenting centain concept and stories for the course Postcolonial Transitions and Transnational Justice during my MA Gender Studies.</p>
-          <p>Along with 5 other amazing classmates, we wanted to create an experience were one is confronted by the inability of choice as a result of coliniality, imperialism, and Eurocentrism. Taking the true story of Pocahontas, with her real name being Amonute, which has been altered greatly in our collective minds by Disney, the player is put in her shoes and has to make choices as British colonizers force themselves onto her community and land.</p>
-        </div>
-        <div>
-          <p>The game was a huge success during class. With many classmates being frustrated once they quickly figured out that their choices were to no avail. There is no happy ending, only exploitation caused by power imbalance and the greed of men. I highly reccomend you checking it out yourself <a href="https://annaboter.github.io/PCTN-presentation-game/">here!</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="sticky-parent">
-    <div class="sticky">
-      <div class="scroll-section"></div>
-    </div>
+<%# <div class="container airbnbooks">
+  <div>
+    <p>After just 7 weeks into the Web Development bootcamp of Le Wagon, me and my teammates, Vincent Bohec and Zlatko Naumoski, made a fun Airbnb clone website that, instead of renting apartments, rents out books!</p>
+    <p>Our biggest challenge was finishing the whole idea in 1 week. Like a new born deer, wobbly on our legs, we tackled building the app in a record time. Having never worked on a web project like this with teammembers before, it was a gigantic learning experience for all of us.</p>
+    <p>We figured out how to divide our responsibilities by working in silos and always reminding ourselves of the MVC pattern. This project has been the backbone of teaching me project implementation and teamwork and I would have not been this confident in my web dev skills if it wasn't for this project.</p>
   </div>
-</main>
+</div>
+
+<div class="container pctn">
+  <div>
+    <p>One of my proudest achievements and a true example of what I stand for. This "choose your own adventure game" was a result of coming up for a fun, engaging, and innovative way of presenting centain concept and stories for the course Postcolonial Transitions and Transnational Justice during my MA Gender Studies.</p>
+    <p>Along with 5 other amazing classmates, we wanted to create an experience were one is confronted by the inability of choice as a result of coliniality, imperialism, and Eurocentrism. Taking the true story of Pocahontas, with her real name being Amonute, which has been altered greatly in our collective minds by Disney, the player is put in her shoes and has to make choices as British colonizers force themselves onto her community and land.</p>
+    <p>The game was a huge success during class. With many classmates being frustrated once they quickly figured out that their choices were to no avail. There is no happy ending, only exploitation caused by power imbalance and the greed of men. I highly reccomend you checking it out yourself <a href="https://annaboter.github.io/PCTN-presentation-game/">here!</a></p>
+  </div>
+</div> %>
